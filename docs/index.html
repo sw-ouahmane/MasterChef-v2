@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MasterChef.io</title>
+
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>MasterChef.io</h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="#features" class="nav_menu_link">features</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#about" class="nav_menu_link">about</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#team" class="nav_menu_link">team</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Welcome to <span>MasterChef.io</span>
+              <br />
+              Discover recipes.
+            </h1>
+            <p class="info-text">
+              Explore a world of culinary creations and find inspiration for your next meal.
+            </p>
+
+            <div class="btn_wrapper">
+              <button class="btn view_more_btn" onclick="window.location.href='http://www.judesec.tech';">
+                Live Demo <i class="ri-arrow-right-line"></i>
+              </button>
+
+              <button class="btn documentation_btn" onclick="window.location.href='https://github.com/judeo-s/MasterChef.io.git';">Repository</button>
+            </div>
+          </div>
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./images/chef.jpg" alt="chef-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== FEATURES ==== -->
+    <section class="wrapper" id="features">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="centered-container">
+          <h2 class="logo">Features</br></br></h1>
+        </div>
+        <div class="grid-cols-2">
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./images/browse_recipes.png" alt="chef-img" />
+            </div>
+          </div>
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Over <span>500+</span>recipes.
+            </h1>
+            <p class="info-text">
+              With over 500 delicious recipes, you'll find a diverse array of meals to perfectly satisfy your nutritional needs and delight your taste buds.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              <span>Search</span> favourite meals.
+            </h1>
+            <p class="info-text">
+              Narrow your search through our extensive collection of recipes and find the perfect dish for your occasion.
+            </p>
+          </div>
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./images/search_recipes.png" alt="chef-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="grid-cols-2">
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./images/create_accounts.png" alt="chef-img" />
+            </div>
+          </div>
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Join the <span>Community</span>.
+            </h1>
+            <p class="info-text">
+              Create an account to join our community and share your recipes with others.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ==== ABOUT ==== -->
+    <section class="wrapper" id="about">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="centered-container">
+          <h2 class="logo">About Us</br></br></h2>
+        </div>
+        <div>
+          <span class="info-text">
+            <p>We are a community of passionate food enthusiasts who love to share and discover new recipes. Our mission is to bring people together through the joy of cooking and eating. Whether you're a professional chef or a home cook, you'll find inspiration and support here.</p>
+        <p>MasterChef.io was founded in 2024 with the goal of creating a platform where food lovers can share their favorite recipes, discover new dishes, and connect with like-minded individuals. We believe that cooking is an art, and everyone has something unique to contribute to the culinary world.</p>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==== TEAM ==== -->
+    <section class="wrapper" id="team">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="centered-container">
+          <h2 class="logo">The Team</br></br></h2>
+        </div>
+        <div class="grid-cols-3">
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Abdullah Ouahmane</span>
+              <p>
+                Co-Founder</br>
+                Chief Technical Officer</br>
+                Backend Developer</br>
+              </p>
+            </div>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/abdallah-ouahmane-691970116/" target="_blank"><img class="contact-icon" src="images/linkedin_icon.png" alt="linkedin_icon" /></a>
+              <a href="https://github.com/sw-ouahmane" target="_blank"><img class="contact-icon" src="images/github_icon.png" alt="github_icon" /></a>
+              <a href="#" target="_blank"><img class="contact-icon" src="images/twitter_icon.png" alt="twitter_icon" /></a>
+            </div>
+          </div>
+          <div class="grid-col-item"></div>
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Jude Osam-Sackey</span>
+              <p>
+                Co-Founder</br>
+                Chief Marketing Officer</br>
+                Frontend Developer</br>
+              </p>
+            </div>
+            <div class="socials">
+              <a href="https://www.linkedin.com/in/jude-osam-sackey-03508722a/" target="_blank"><img class="contact-icon" src="images/linkedin_icon.png" alt="linkedin_icon" /></a>
+              <a href="https://github.com/judeo-s" target="_blank"><img class="contact-icon" src="images/github_icon.png" alt="github_icon" /></a>
+              <a href="https://x.com/0xj_o_s" target="_blank"><img class="contact-icon" src="images/twitter_icon.png" alt="twitter_icon" /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>

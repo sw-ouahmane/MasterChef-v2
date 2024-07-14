@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+  <main>
+    <section class="featured-recipes">
+      <h2>Results for: {{results}} </h2>
+      <div class="container">
+        {% if recipes %}
+            {% for recipe in recipes %}
+                <article class="recipe-card">
+                <a href="#">
+                    <img src="{{recipe['recipe']['image']}}" alt="Recipe 1">
+                </a>
+                <h3><a href="{{recipe['recipe']['url']}}">{{recipe['recipe']['label']}}</a></h3>
+                <p>Ingredients:</p>
+                <ul class="ingredient-list">
+                    {% for ingredient in recipe['recipe']['ingredientLines'] %}
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
+                </ul>
+                </article>
+            {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+  </main>
+{% endblock %}      

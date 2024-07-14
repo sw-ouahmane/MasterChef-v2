@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container">
+    <div class="form-container">
+      <h2>Submit a Recipe</h2>
+      <div id="flashes" class="flashes">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <script>
+              displayFlashMessage('{{ category }}', '{{ message }}');
+            </script>
+          {% endfor %}
+        {% endif %}
+        {% endwith %}
+    </div>
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <div class="input-box">
+            {{ form.title(size=32) }}
+        </div>
+        <div class="input-box">
+          {{ form.description(size=32) }}
+      </div>
+        <div class="input-box">
+            {{ form.ingredients(size=32) }}
+        </div>
+        <div class="input-box">
+            {{ form.image_url(size=32) }}
+        </div>
+        <div class="input-box">
+          {{ form.instructions_url(size=32) }}
+      </div>
+    <div class="input-box button">
+      {{ form.submit() }}
+    </div>
+    </form>
+  </div>
+</div>
+{% endblock %}

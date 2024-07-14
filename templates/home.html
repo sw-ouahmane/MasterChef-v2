@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome, {{ current_user.username }}!</br>
+          Discover Delicious Recipes</h1>
+        <p>Explore a world of culinary creations and find inspiration for your next meal.</p>
+        <a href="{{url_for('browse')}}" class="btn">Browse Recipes</a>
+      </div>
+    </section>
+
+    <section class="featured-recipes">
+      <h2>Featured Recipes</h2>
+      <div class="container">
+        {% if recipes %}
+            {% for recipe in recipes %}
+                <article class="recipe-card">
+                <a href="#">
+                    <img src="{{recipe['recipe']['image']}}" alt="Recipe 1">
+                </a>
+                <h3><a href="{{recipe['recipe']['url']}}">{{recipe['recipe']['label']}}</a></h3>
+                <p>Source: {{recipe['recipe']['source']}}</p>
+                <p>Ingredients:</p>
+                <ul class="ingredient-list">
+                    {% for ingredient in recipe['recipe']['ingredientLines'] %}
+                        <li>{{ingredient}}</li>
+                    {% endfor %}
+                </ul>
+                </article>
+            {% endfor %}
+        {% endif %}
+      </div>
+    </section>
+
+    <section class="call-to-action">
+      <div class="container">
+        <h2>Share Your Culinary Creations</h2>
+        <p>Join our community and submit your favorite recipes.</p>
+        <a href="{{url_for('submit_recipe')}}" class="btn">Submit Recipe</a>
+      </div>
+    </section>
+  </main>
+{% endblock %}      
